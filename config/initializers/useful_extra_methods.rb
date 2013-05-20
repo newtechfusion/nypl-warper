@@ -1,3 +1,5 @@
+#!/bin/env ruby
+# encoding: utf-8
 WillPaginate::Collection.class_eval do  alias :to_json_without_paginate 
 :to_json 
 def to_json(options = {}) 

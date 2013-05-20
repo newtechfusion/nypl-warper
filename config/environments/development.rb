@@ -23,8 +23,9 @@ config.action_view.debug_rjs                         = true
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false
 
-GDAL_PATH  = ""
+GDAL_PATH  = "/usr/share/gdal"
+
 GOOGLE_ANALYTICS_CODE = "UA-12240034-2" 
-GOOGLE_ANALYTICS_COOKIE_PATH = "/warper-dev/"
-ActionController::Base.relative_url_root = "/warper-dev" 
+GOOGLE_ANALYTICS_COOKIE_PATH = ""
+ActionController::Base.relative_url_root = "" 
 Yahoo_app_id = "lbQ2VNLV34EoEmxF9dguamWEFSXjI7adJ.ACHkdChT2JGmQ0Bj.jP1cF0nmh5XP3"

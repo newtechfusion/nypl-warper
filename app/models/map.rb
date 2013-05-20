@@ -1,5 +1,6 @@
 require "open3"
-require "ftools"
+#i remove ftools
+require "fileutils"
 require "matrix"
 require 'nokogiri'
 require 'RMagick'

@@ -145,7 +145,7 @@ map.comments_layer '/layers/:id/comments', :controller => 'layers', :action => '
 
  #for legacy urls
   #map.connect '/mapscans/*', :controller => 'maps'
-  map.connect '/maps/:id', :controller => 'maps', :action => "show"
+  map.connect '/maps/:id', :controller => 'mapaps', :action => "show"
    map.connect '/maps/:action/:id', :controller => 'maps'
   map.connect '/maps/:action/:id.:format', :controller => 'maps'
 

@@ -18,7 +18,7 @@ config.action_view.cache_template_loading            = true
 # Disable delivery errors, bad email addresses will be ignored
 # config.action_mailer.raise_delivery_errors = false
 
-GDAL_PATH  = ""
+GDAL_PATH  = "/usr/share/gdal/1.9"
 GOOGLE_ANALYTICS_CODE = "UA-12240034-1"
 GOOGLE_ANALYTICS_COOKIE_PATH = "/warper/"
 Yahoo_app_id = "lbQ2VNLV34EoEmxF9dguamWEFSXjI7adJ.ACHkdChT2JGmQ0Bj.jP1cF0nmh5XP3"

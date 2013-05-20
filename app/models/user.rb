@@ -1,3 +1,5 @@
+#!/bin/env ruby
+# encoding: utf-8
 require 'digest/sha1'
 require 'base64'
 class User < ActiveRecord::Base

@@ -1,6 +1,7 @@
-require 'gdal/gdal'
+require 'gdal'
 
 def get_raster_extents (filename)
+ 
     raster = Gdal::Gdal.open(filename)
     dx = raster.RasterXSize
     dy = raster.RasterYSize
