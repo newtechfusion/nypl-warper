@@ -92,6 +92,7 @@ class MapsController < ApplicationController
   end
 
   require 'yahoo-geoplanet'
+  include Yahoo::GeoPlanet
   def geosearch
     sort_init 'updated_at'
     sort_update
@@ -552,8 +553,9 @@ class MapsController < ApplicationController
    end
 
 
-   require 'mapscript'
-   include Mapscript
+
+#require "mapscript"
+#include Mapscript
    def wms()
 
       @map = Map.find(params[:id])

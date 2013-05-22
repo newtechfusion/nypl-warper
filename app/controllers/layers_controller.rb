@@ -28,6 +28,7 @@ def thumb
 end
 
 require 'yahoo-geoplanet'
+include Yahoo::GeoPlanet
 def geosearch
   sort_init 'updated_at'
   sort_update
@@ -136,11 +137,11 @@ def index
   if params[:sort_order] && params[:sort_order] == "desc"
     sort_nulls = " NULLS LAST"
   else
-    sort_nulls = " NULLS FIRST"
+    sort_nulls = " NULLS FIRST"  
   end
   
     @per_page = params[:per_page] || 20
-  paginate_params = {    
+    paginate_params = {    
     :page => params[:page],
     :per_page => @per_page,
     :select => select,
@@ -342,8 +343,8 @@ end
 
 
 
-   require 'mapscript'
-   include Mapscript
+   #require 'mapscript'
+   #include Mapscript
    def wms()
 
       @layer = Layer.find(params[:id])

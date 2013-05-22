@@ -376,7 +376,7 @@ font-weight: strong;
 .headerDiv {
 	position: relative;
 	margin: 0;
-	background: #e2dedb url(/warper/images/header_bg.jpg) 0 -30px scroll;
+	background: #e2dedb url(/images/header_bg.jpg) 0 -30px scroll;
 	padding: 1px 0 0 0;
 }
 
